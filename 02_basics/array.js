@@ -46,7 +46,7 @@ const myArr2 = [0, 1, 2, 3, 4, 5]
 
 
 
-// to an array vai 'isarray'
+// to an array via 'isarray'
 // to convert anything into array 'from'
 console.log(Array.isArray('Shubham'))
 console.log(Array.from('Shubham'))
