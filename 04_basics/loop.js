@@ -78,10 +78,61 @@ for (const printArray in checkArray) {
 // forin loop on map 
 
 for (const printMap in map) {
-    console.log(printMap);
+    //console.log(printMap);
 }
 //[NOTE: MAP AREN'T IETRETABLE]
 
 // ++++++++++++++++++++++++++   foreach   +++++++++++++++++++++++++++++
 
 //[NOTE: on array apply forof, on object apply forin loop]
+
+const newArray = ['js', 'cpp', 'java', 'rb', 'py']
+
+
+// each k bracket me function lagao wo bhi without name, fir jo mrji wo kro
+newArray.forEach( function (item) {
+    //console.log(item);
+}  )
+
+
+//we can apply arrow function as well. bas function ka naam nahi dena hai.
+newArray.forEach( (val) => {
+    //console.log(val);
+});
+
+//if already function is present then uske naam ko bhi foreach k loop me function ki jagah per rakh sakte hai. EX.
+
+function tryByFunctionName (shubham) {
+    //console.log(shubham);
+}
+
+newArray.forEach (tryByFunctionName)  //give reference of the function
+
+
+
+//function me kewal item hi nahi, uske index ya poore array or bhi kafi kuch ko le sakte hai.
+newArray.forEach( (val, index, newArray) => {
+    //console.log(val, index, newArray);
+});
+
+
+//[{}, {}, {}, {}]   array k ander object, foreach loop is used.
+
+const objectInArray = [
+    {
+        language: 'Hindi',
+        state: 'Up',
+    },
+    {
+        language: 'Haryanvi',
+        state: 'Haryana'
+    },
+    {
+        language: 'Punjabi',
+        state: 'punajab'
+    }
+]
+
+objectInArray.forEach ( (val2) => {
+    console.log(val2.language);
+} )
