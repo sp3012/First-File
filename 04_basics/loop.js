@@ -54,7 +54,7 @@ const myObject = {
 for (const printobject in myObject) {
     //console.log(printobject);
 }
-//this code will print only key of the object, to print values of the object the syntax is objectName[keyname]
+//this code will print only key of the object, to print values of the object the syntax is                 objectName[keyname]
 
 for (const printobject in myObject) {
     //console.log(`${printobject}, ${myObject[printobject]}`);
@@ -289,4 +289,4 @@ const shoppingCart = [
 ]
 
 const priceToPay = shoppingCart.reduce( (acc, item) => (acc + item.price), 0)
-console.log(priceToPay);
+//console.log(priceToPay);
