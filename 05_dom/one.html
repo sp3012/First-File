@@ -28,34 +28,58 @@
             querySelector
          -->
 
-         <ul>
+        <ul>
             <li class="list-item">Home</li>
             <li class="list-item">Service</li>
             <li class="list-item">About</li>
             <li class="list-item">Contact</li>
-         </ul>
+        </ul>
 
-         <!-- 
+        <!-- 
             querySelectorAll:-    property hum laga rahe hai, lekin ye un sari cheezon ko utha ker leke aaega jisko humne select kiya (for example:-  agar h1 select kiya to document me jitne bhi h1 honge sabko select karke leke aaega) jo ki node list ki form me hoga. isliye hume mention karna hoga ki hum change un sabme se kisme karna chah rahe hai with the help of [].
             
             node List:-   or agar is method se nahi karne to node list ke prototype me jake dekho ki foreach loop accesseble hai ya nahi, agar hai to usko lagao or fir uske kisi bhi item pe jo mainpulation karna hai wo karo.
           -->
 
 
-          <!-- 
+        <!-- 
             HTML collection:-  ab hume jab node list na milke HTML collection mil raha hai, to uske prototyp me forEach ka accesible to hai hi nahi. To is condition me hum us element(nodeList, HTML collection etc.) usko array me covert karenge with the help of syntax Array.from(nameOfConcertingObject).
            -->
 
-           <div class="week">
-            <div class="days"></div>
-            <div class="days"></div>
-            <div class="days"></div>
-            <div class="days"></div>
-           </div>
+
+
+
+        <div class="week">
+            <div class="days">Monday</div>
+            <div class="days">Tuseday</div>
+            <div class="days">Wednesday</div>
+            <div class="days">Thursday</div>
+        </div>
     </div>
 </body>
 <script>
 
+
+    //++++++++++++++++++++++++ jump from parent to child and child to parent ++++++++++++++++++++
+
+    const parent = document.querySelector('.week')
+    // console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[0].innerHTML);
+
+    for (let i = 0; i < parent.children.length; i++) {       //we have written parent.children because array jaisa children dera h naki parent.
+        //console.log(parent.children[i].innerHTML);
+
+    }
+
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+
+    //jump from child to parent
+
+    const child = document.querySelector('.days')
+    // console.log(child.parentElement);
+    // console.log(child.nextElementSibling);
 </script>
 
 </html>
