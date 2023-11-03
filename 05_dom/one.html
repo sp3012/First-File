@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DOM</title>
+    <style>
+        .main {
+            background-color: black;
+            color: white;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="main">
+    <div>
+        <h1 id="title" class="new-name" style="background-color: green; border-radius: 15px;">Shubham Kumar website
+            <span style="display: none;">This is another text</span>
+        </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, ducimus!</p>
+
+        <!-- innerText:- jiski display hidden hogi usko show nahi karega.
+        textContent:- jiski display hidden hogi usko bhi sho karega
+        innerHTML:- jisko hum select karenge uske poore html ko hi de dega including ander agar jo kuch span, h2, h1, p hoga sbko dega.-->
+
+        <!-- 
+            querySelector
+         -->
+
+         <ul>
+            <li class="list-item">Home</li>
+            <li class="list-item">Service</li>
+            <li class="list-item">About</li>
+            <li class="list-item">Contact</li>
+         </ul>
+
+         <!-- 
+            querySelectorAll:-    property hum laga rahe hai, lekin ye un sari cheezon ko utha ker leke aaega jisko humne select kiya (for example:-  agar h1 select kiya to document me jitne bhi h1 honge sabko select karke leke aaega) jo ki node list ki form me hoga. isliye hume mention karna hoga ki hum change un sabme se kisme karna chah rahe hai with the help of [].
+            
+            node List:-   or agar is method se nahi karne to node list ke prototype me jake dekho ki foreach loop accesseble hai ya nahi, agar hai to usko lagao or fir uske kisi bhi item pe jo mainpulation karna hai wo karo.
+          -->
+
+
+          <!-- 
+            HTML collection:-  ab hume jab node list na milke HTML collection mil raha hai, to uske prototyp me forEach ka accesible to hai hi nahi. To is condition me hum us element(nodeList, HTML collection etc.) usko array me covert karenge with the help of syntax Array.from(nameOfConcertingObject).
+           -->
+
+           <div class="week">
+            <div class="days"></div>
+            <div class="days"></div>
+            <div class="days"></div>
+            <div class="days"></div>
+           </div>
+    </div>
 </body>
+<script>
+
+</script>
+
 </html>
