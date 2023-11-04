@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding li with the help of script</title>
+    <style>
+        .body {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <ul class="language">
+        <li>Java Script</li>
+    </ul>
+</body>
+<script>
+
+    function addLanguage(newlang) {
+        const li = document.createElement('li');
+        li.innerHTML = `${newlang}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage('python')
+    addLanguage('ruby')
+
+    //another optimized method to add li, kuki abhi li add hori h poore innerHTML ko travel karne k baad. To jb data bahut bada hoga tab poore tree me ghoomne k baad tab jake value neeche jake add hogi, jisse optimization me problem aaegi.
+
+    function addOptiLanguage(newLang) {
+        const li = document.createElement('li')
+        const addText = document.createTextNode(newLang)
+        li.appendChild(addText)
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage('cpp')
+
+    //edit i.e. replace any one laguage with another language.
+
+    const replace = document.querySelector('li:nth-child(2)')
+    //replace.innerHTML = 'Java'
+
+    //another optimized method.
+    const replaceOpti = document.createElement('li')
+    replaceOpti.textContent = 'Swift'
+    replace.replaceWith(replaceOpti)
+
+    //EDIT (another method) replace first child value
+    const firstLang = document.querySelector('li:first-child')
+    firstLang.outerHTML = '<li>Python</li>'
+
+    //remove last language
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+
+</script>
+
+</html>
