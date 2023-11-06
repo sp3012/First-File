@@ -1,5 +1,5 @@
 const myArr = [1, 2, 5, 7, true, 'Shubham']
-// console.log(myArr[4]);
+ //console.log(myArr[3]);
 
 const myArr2 = [0, 1, 2, 3, 4, 5]
 
@@ -11,12 +11,12 @@ const myArr2 = [0, 1, 2, 3, 4, 5]
 // myArr2.shift()
 
 // const newArr = myArr2.join()
-// console.log(myArr2);
+//console.log(myArr2);
 // console.log(typeof newArr);
 
 //+++++++++++++ slice, splice +++++++++++++++++++++++++++++++++++
 
-// const myn1 = myArr2.slice(1, 4)
+// const myn1 = myArr2.slice(0, 4)
 // console.log('A', myn1);
 
 // const myn2 = myArr2.splice()
@@ -24,10 +24,11 @@ const myArr2 = [0, 1, 2, 3, 4, 5]
 
 // console.log(myArr2);
 
-// const marvelHeros = ['Ironman', 'Spiderman', 'Thor']
-// const dcheros = ['Superman', 'Batman', 'flash']
+const marvelHeros = ['Ironman', 'Spiderman', 'Thor']
+const dcheros = ['Superman', 'Batman', 'flash']
 
 // marvelHeros.push(dcheros)
+// console.log(marvelHeros);
 
 
 // combination with the help of concatination
@@ -46,10 +47,10 @@ const myArr2 = [0, 1, 2, 3, 4, 5]
 
 
 
-// to an array via 'isarray'
+// to check any array via 'isarray'
 // to convert anything into array 'from'
-console.log(Array.isArray('Shubham'))
-console.log(Array.from('Shubham'))
+// console.log(Array.isArray('Shubham'))
+// console.log(Array.from('Shubham'))
 
 
 // to make anything (more than one varibales) into an array with the help of "of"
@@ -57,4 +58,4 @@ const score1 = 200
 const score2 = 500
 const score3 = 300
 
-console.log(Array.of(score1, score2, score3));
+//console.log(Array.of(score1, score2, score3));

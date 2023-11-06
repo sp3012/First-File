@@ -62,8 +62,9 @@ function passArrayInFunction (getArray) {
     return getArray[2]
 }
 
-console.log(passArrayInFunction(newArray))
+//console.log(passArrayInFunction(newArray))
 
 
 // just similar to oject we can also pass the array directly into function.
-console.log(passArrayInFunction([500, 700, 500, 800]))
+//console.log(passArrayInFunction([500, 700, 500, 800]))
+

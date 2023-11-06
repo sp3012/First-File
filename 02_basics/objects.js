@@ -13,7 +13,7 @@ const jsUser = {
     isLoggedIn: false
 }
 
-// console.log(jsUser.email);
+//  console.log(jsUser.email);
 // console.log(jsUser['email']); // shortcut to extract value of the object without dot.
 // console.log(jsUser[mySym]); 
 // console.log(typeof jsUser[mySym]);

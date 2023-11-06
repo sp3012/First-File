@@ -12,7 +12,7 @@
 
 // console.log(1 + 3 + '4');
 
-// is first is string then all the digits will be added side by side
+// if first is string then all the digits will be added side by side
 // but if first number is a number then upto string all of them will be treated as a number, then string.
 
 const str1 = 'Shubhamk'

@@ -7,7 +7,7 @@ const user = {
         //console.log(this);    //"this" will print all the context   {this refer's to the context of "object"}
     }    
 }
-user.welcomeMessage()
+//user.welcomeMessage()
 
 //in browser the global object is 'window' object
 // "this" keyword work's in function
@@ -33,7 +33,7 @@ user.welcomeMessage()
 //another way of representing arrow function by eleminating curly braces {note: return can only be written in curly braces only}.
 
 const addTwo = (num1, num2) => (num1 + num2) //NOTE: after arrow the value should be in bracis to avoid any error in future, or evaluating any other value like object
-console.log(addTwo(5,7));
+//console.log(addTwo(5,7));
 
 //arrow functions denotion
 
@@ -41,16 +41,17 @@ console.log(addTwo(5,7));
 // () => ()
 
 
-//++++++++++++++++++++ Imediately invoked function +++++++++++++++++++++++++++++++++=
+//++++++++++++++++++++ Imediately invoked function expression (IIFE)   +++++++++++++++++++++++++++++++++=
 
 (function chai () {
-    console.log(`Shubham Kumar`);
+    //console.log(`Shubham Kumar`);
 })();
+
 
 //1. to execute immediatly any function IIFE(immediaty invoked function experession) function is used
 //2. sometimes global variable may pollute scope variables, hence to eleminate this prolem IIFE is used.
 
-// ()() //syntax
+// ()() //syntax, ab is pehle wale k ander chahe function likh lo ya arrow function likh lo.
 
 ( () => {
     console.log('shubham Kumar is a good boy');
