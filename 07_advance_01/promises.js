@@ -131,3 +131,9 @@ fetch('https://jsonplaceholder.typicode.com/users')
 
 //now here is no need to await.
 
+//+++++++++++++++++++++++++++++++++++++++++ FETCH ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//study fetch from mdn.
+
+// fetch k lye ek alag se special qeue(micro task qeue/fetch qeue/priority que) banti hai or usko priority pehle di jati hai, isliye agar koi async function pehle dya h lekin humne fetch ko baad me dya h to fri bhi pehle fetch execute hoga or uske baad async function execute hoga. for preference see screenshot image.(irrespective of setInterval time)
+
