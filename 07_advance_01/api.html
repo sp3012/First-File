@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body style="background-color: black; color: white;">
+    <h1>Shubham Kumar</h1>
+</body>
+<script>
+    //ajax reuest: jyada use nahi hoti aaj k time me. isliye main point likh lye.
+
+    //most of the time url se response(kuki ajax url se response hi leke aata h sari process complete hone ke baad) string me aata hai, kabhi kabhi object me aa jata hai. isliye pehle typeof krke dekh lena. or agar string h to usko object/JSON me convert karna hai.
+
+    //syntax to convert string(or anything into JSON): JSON.parse(anyString)            // parse converts string into JSON. ab object ki key ko dot krke leke aa sakte hai.
+
+    const requestUrl = 'https://api.github/users/hiteshchaudhary'
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', requestUrl)    //ab open bina send k call nahi hota. islie send ko call krna hoga.
+    xhr.send()
+</script>
+</html>
