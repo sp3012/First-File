@@ -8,7 +8,7 @@ const promiseOne = new Promise(function (resolve, reject) {
   }, 1000);
 });
 
-//.then ka direct relation hai reaolve se. ab resolve ko or then ko connect karne k lye async task me resolve() syntax dena hoga tab jake promise resolve hoga/promise.then run hoga.
+//.then ka direct relation hai resolve se. ab resolve ko or then ko connect karne k lye async task me resolve() syntax dena hoga tab jake promise resolve hoga/promise.then run hoga.
 promiseOne.then(function () {
   //console.log('Promise consumed');
 });
@@ -36,7 +36,7 @@ const promiseThree = new Promise(function (resolve, reject) {
 });
 
 promiseThree.then(function (user) {
-  //resolve se jo bhi data aa raha hai humne usko ser bolke function me de dya. or fir us object ki value ko extract kr lya.
+  //resolve se jo bhi data aa raha hai humne usko user bolke function me de dya. or fir us object ki value ko extract kr lya.
   //console.log(user);
 });
 
@@ -123,7 +123,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
   return response.json()
 })
 .then((data) => {
-  console.log(data);     //isse purane wale then ke data ko lega ye wala then
+  console.log(data);     //isse purane wale then ke data(response.json se jo json me convert hoke aaega) ko lega ye wala then
 })
 .catch(() => {
   console.log('Error');
@@ -135,5 +135,5 @@ fetch('https://jsonplaceholder.typicode.com/users')
 
 //study fetch from mdn.
 
-// fetch k lye ek alag se special qeue(micro task qeue/fetch qeue/priority que) banti hai or usko priority pehle di jati hai, isliye agar koi async function pehle dya h lekin humne fetch ko baad me dya h to fri bhi pehle fetch execute hoga or uske baad async function execute hoga. for preference see screenshot image.(irrespective of setInterval time)
+// fetch k lye ek alag se special qeue(micro task qeue/fetch qeue/priority que) banti hai or usko priority pehle di jati hai, isliye agar koi async function pehle dya h lekin humne fetch ko baad me dya h to fir bhi pehle fetch execute hoga or uske baad async function execute hoga. for preference see screenshot image.(irrespective of setInterval time)
 
